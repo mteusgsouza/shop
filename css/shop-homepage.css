@@ -1,0 +1,18 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+ .card-body .card-title{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card-body h5{
+  font-size: 1rem;
+}
+
+.card-body .card-text{
+  font-size: .9rem;
+}
