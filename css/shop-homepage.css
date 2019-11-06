@@ -4,15 +4,49 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
 
- .card-body .card-title{
+.card-body .card-title {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.card-body h5{
+.card-body h5 {
   font-size: 1rem;
 }
 
-.card-body .card-text{
-  font-size: .9rem;
+.card-body .card-text {
+  font-size: 0.9rem;
+}
+
+footer .icon{
+  font-size: 2rem;
+  color:white;
+}
+
+footer,
+footer a{
+  color: white;
+}
+
+footer span{
+  font-size: 1.1rem;
+
+}
+footer a:hover{
+  text-decoration: none;
+  color:#e2e2e2;
+}
+footer li{
+  list-style-type: none;
+}
+
+#product-filters li {
+  cursor: pointer;
+  color: #3e5ab4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#product-filters li:hover,
+li.filter-active {
+  color: #1bb1dc;
 }

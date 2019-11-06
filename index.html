@@ -13,6 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/shop-homepage.css" rel="stylesheet">
 
@@ -54,11 +56,13 @@
             <div class="col-lg-3">
 
                 <h1 class="my-4">Logo</h1>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Smartphones</a>
-                    <a href="#" class="list-group-item">Televisões</a>
-                    <a href="#" class="list-group-item">Eletrodomésticos</a>
-                    <a href="#" class="list-group-item">Vestuário</a>
+                <div class="list-group" id="product-filters">
+                    <li class="list-group-item filter-active" data-filter="*">Todos produtos</li>
+                    <li class="list-group-item" data-filter=".filter-smartphone">Smartphones</li>
+                    <li class="list-group-item" data-filter=".filter-informatica">Informática</li>
+                    <li class="list-group-item" data-filter=".filter-televisor">Televisores</li>
+                    <li class="list-group-item" data-filter=".filter-eletrodomestico">Eletrodomésticos</li>
+                    <li class="list-group-item" data-filter=".filter-vestuario">Vestuário</li>
                 </div>
 
             </div>
@@ -74,13 +78,13 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+                            <img class="d-block img-fluid" src="https://i.imgur.com/OFtvczT.gif" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+                            <img class="d-block img-fluid" src="https://i.imgur.com/lbopYBI.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+                            <img class="d-block img-fluid" src="https://i.imgur.com/Nx9DhRI.png" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,9 +97,9 @@
                     </a>
                 </div>
 
-                <div class="row">
+                <div class="row product-container">
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 product-item filter-smartphone">
                         <div class="card h-100">
                             <a href="shopItem.html">
                                 <img class="card-img-top"
@@ -104,7 +108,8 @@
                             </a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="shopItem.html">Moto G8 Plus 64GB Dual Chip Android 6.3" Qualcomm Snapdragon 665 4G Câmera 48MP + 5MP + 16MP- Azul Safira</a>
+                                    <a href="shopItem.html">Moto G8 Plus 64GB Dual Chip Android 6.3" Qualcomm Snapdragon
+                                        665 4G Câmera 48MP + 5MP + 16MP- Azul Safira</a>
                                 </h4>
                                 <h5 class="font-weight-bold">R$ 1.495,12</h5>
                                 <p class="card-text">Moto G8 Plus 64GB Dual Chip Android 6.3" Qualcomm Snapdragon 665 4G
@@ -117,7 +122,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 product-item filter-eletrodomestico">
                         <div class="card h-100">
                             <a href="shopItem.html"><img class="card-img-top"
                                     src="https://images-americanas.b2w.io/produtos/01/00/oferta/132947/7/132947714_1GG.jpg"
@@ -136,7 +141,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 product-item filter-informatica">
                         <div class="card h-100">
                             <a href="shopItem.html"><img class="card-img-top"
                                     src="https://images-americanas.b2w.io/produtos/01/00/img/471642/0/471642093_1GG.jpg"
@@ -157,7 +162,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 product-item filter-eletrodomestico">
                         <div class="card h-100">
                             <a href="shopItem.html"><img class="card-img-top"
                                     src="https://images-americanas.b2w.io/produtos/01/00/offers/01/00/item/132522/7/132522724_1GG.jpg"
@@ -177,7 +182,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 product-item filter-televisor">
                         <div class="card h-100">
                             <a href="shopItem.html"><img class="card-img-top"
                                     src="https://images-americanas.b2w.io/produtos/01/00/offers/01/02/item/133791/1/133791184_1GG.png"
@@ -197,7 +202,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 product-item filter-vestuario">
                         <div class="card h-100">
                             <a href="shopItem.html"><img class="card-img-top"
                                     src="https://images-americanas.b2w.io/produtos/01/00/img/101712/4/101712446_1GG.jpg"
@@ -217,7 +222,7 @@
                     </div>
 
                 </div>
-                <!-- /.row -->
+                <!-- /.row /.product-container -->
 
             </div>
             <!-- /.col-lg-9 -->
@@ -231,6 +236,21 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
+            <div id="contact-footer">
+                <ul class="lead">Entre em contato:
+                    <li>
+                        <a href="https://www.facebook.com/lucas.pawlowski">
+                            <i class="icon ion-logo-facebook"></i>
+                            <span>Lucas Pawlowski</span>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="icon ion-logo-whatsapp"></i>
+                        <span>(31) 9 8712-5704</span>
+                    </li>
+                </ul>
+
+            </div>
             <p class="m-0 text-center text-white">Copyright &copy; Nome do site 2019</p>
         </div>
         <!-- /.container -->
@@ -239,7 +259,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
 
+    <script src="js/index.js"></script>
 </body>
 
 </html>
